@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Yeep";
+    src: url("LilitaOne-Regular.ttf");
+}
+
+
+
+body {
+    font-family: Yeep;
+    background-image: url(./pages/suburb-corridor-wall.png);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    cursor: default;
+}
+
+
+ul {
+    display: flex;
+}
+.Center {
+    margin: auto;
+    display: inline;
+    flex-direction: row;
+    font-size: 19px;
+    resize: none;
+    font-family: Yeep;
+
+}
+input {
+    min-width: 40em;
+    max-height: 80px;
+    padding: 0.5em;
+    display: flex;
+    border-radius: 20px;
+    border-style: hidden;
+    stroke-linecap:round;
+    outline: none;
+}
+h1 {
+    font-size: 90px;
+    background-color: white;
+    border-radius: 90px;
+    padding: 5px;
+}
