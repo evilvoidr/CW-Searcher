@@ -1,5 +1,8 @@
+
 const BaseUrl = "https://websitewhereitestthings.neocities.org/YeepCWfinder/"
 const Etxt = document.getElementById("Error")
+const srch = document.getElementById("Text")
+const sug = document.getElementById("sug")
 const CW_List = [
     "GADGETTALES", "PEEPS", "YEEPSVILLE", "SADMAN", "BASEWARS", "MALAKOR",
     "INTRUDER", "SPIDERRUN", "THEGATE", "PLAYRP", "COOLESTWOOPETS", "FLAKE",
@@ -7,21 +10,44 @@ const CW_List = [
     "POOKSYBASE", "SHADOWMILKUP"
 ]
 Etxt.style.opacity = 0
+const buttons = CW_List.map(name => {
+    const Newbut = document.createElement("button")
+    Newbut.textContent = name
+    Newbut.hidden = true;
+    Newbut.classList = "NewBut"
+    Newbut.addEventListener("click", () => {
+        srch.value = name;
+        HA();
+    })
+    sug.appendChild(Newbut);
+    return Newbut;
+})
+function HA() {
+    buttons.forEach(b => b.hidden = true)
+}
   
-document.addEventListener("keydown", (e) => {
-    if(Etxt.style.opacity == 1){
-        Etxt.style.opacity = 0
-    }
+srch.addEventListener("input", (e) => {
+    const TextEdit = srch.value.toUpperCase().trim()
+    if(TextEdit === "") return HA()
+    Etxt.style.opacity = 0;
     
-
-    if (e.key !== "Enter") return;
-        let TextEdit = document.getElementById("Text").value.toUpperCase().trim();
-        if(CW_List.includes(TextEdit)){
-            window.open(BaseUrl + TextEdit)
-            Etxt.textContent = ""
+    for(const b of buttons){
+        const matches = b.textContent.toUpperCase().includes(TextEdit);
+        if(matches){
+            b.hidden = false
         }
         else{
-            Etxt.textContent = "Comunity world not found"
+            b.hidden = true
+        }
+    }
+})
+document.addEventListener("keydown", (e) =>{
+    if (e.key !== "Enter") return;
+        if(CW_List.includes(srch.value.toUpperCase().trim())){
+            window.open(BaseUrl + srch.value.toUpperCase().trim())
+        }
+        else{
+            Etxt.textContent = "Community world not found"
             Etxt.style.opacity = 1
     }
 })
