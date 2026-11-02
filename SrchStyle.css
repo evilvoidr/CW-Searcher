@@ -7,7 +7,7 @@
 
 body {
     font-family: Yeep;
-    background-image: url(suburb-corridor-wall.png);
+    background-image: url(./pages/suburb-corridor-wall.png);
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -42,4 +42,21 @@ h1 {
     background-color: white;
     border-radius: 90px;
     padding: 5px;
+}
+div {
+    margin: auto;
+    display: inline;
+    flex-direction: row;
+    font-size: 19px;
+    resize: none;
+    font-family: Yeep;
+}
+.NewBut {
+    border-radius: 90px;
+    background-color: white;
+    color: black;
+    border-style: hidden;
+    padding: 5px;
+    font-family: Yeep;
+    
 }
