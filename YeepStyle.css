@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Yeep";
+    src: url("LilitaOne-Regular.ttf");
+}
+
+body {
+    color: white;
+    font-family: Yeep;
+    padding: 0;
+    background-image: url("suburb-corridor-wall.png");
+    overflow: hidden;
+    cursor: default;
+    
+}
+@keyframes TitleHover {
+    0% {
+        padding-left: auto;
+        padding-right: auto;
+    }
+    100% {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+@keyframes TagHover {
+    0% {
+        padding-right: auto;
+    }
+    100% {
+        padding-right: 19px;
+    }
+
+}
+li {
+    margin: auto;
+    display: inline;
+    flex-direction: row;
+    font-size: 60px;
+    max-width: 22em;
+}
+ul {
+    display: flex;
+}
+.Tag {
+    background-color: white;
+    color: black;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 11px;
+    width: fit-content;
+}
+.Tag:hover {
+    animation-duration: 50ms;
+    animation-name: TagHover;
+    animation-timing-function: ease-in-out;
+    animation-delay: 25ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.Decor {
+    max-width: 10em;
+    min-height: 10em;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+#TagTitle {
+    font-size: 40px;
+}
+#TagBody {
+    font-size: 26px;
+}
+#body {
+    border-radius: 35px;
+    font-size: 26px;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#title {
+    color: black;
+    background-color: white;
+    font-size: 67px;
+    height: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#title:hover {
+    animation-duration: 50ms;
+    animation-name: TitleHover;
+    animation-timing-function: ease-in-out;
+    animation-delay: 25ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+#PageSec {
+    font-size: 20px;
+}
+
