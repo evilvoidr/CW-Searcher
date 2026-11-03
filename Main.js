@@ -3,6 +3,7 @@ const BaseUrl = "https://websitewhereitestthings.neocities.org/YeepCWfinder/"
 const Etxt = document.getElementById("Error")
 const srch = document.getElementById("Text")
 const sug = document.getElementById("sug")
+const count = document.getElementById("Count")
 const CW_List = [
     "GADGETTALES", "PEEPS", "YEEPSVILLE", "SADMAN", "BASEWARS", "MALAKOR",
     "INTRUDER", "SPIDERRUN", "THEGATE", "PLAYRP", "COOLESTWOOPETS", "FLAKE",
@@ -10,6 +11,12 @@ const CW_List = [
     "POOKSYBASE", "SHADOWMILKUP"
 ]
 Etxt.style.opacity = 0
+const countcount = CW_List.length
+console.log(countcount)
+count.textContent = "CW's: " + countcount
+
+
+
 const buttons = CW_List.map(name => {
     const Newbut = document.createElement("button")
     Newbut.textContent = name
