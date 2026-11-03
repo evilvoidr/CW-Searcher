@@ -84,8 +84,6 @@ img {
     font-size: 67px;
     height: 80px;
     border-radius: 30px;
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #title:hover {
     animation-duration: 50ms;
