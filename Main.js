@@ -1,5 +1,5 @@
 
-const BaseUrl = "https://websitewhereitestthings.neocities.org/YeepCWfinder/"
+const BaseUrl = "https://evilvoidr.github.io/CW-Searcher/"
 const Etxt = document.getElementById("Error")
 const srch = document.getElementById("Text")
 const sug = document.getElementById("sug")
