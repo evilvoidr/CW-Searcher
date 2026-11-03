@@ -11,9 +11,9 @@ const CW_List = [
     "POOKSYBASE", "SHADOWMILKUP"
 ]
 Etxt.style.opacity = 0
-const countcount = CW_List.length
-console.log(countcount)
-count.textContent = "CW's: " + countcount
+//const countcount = CW_List.length
+//console.log(countcount)
+//count.textContent = "CW's: " + countcount
 
 
 
