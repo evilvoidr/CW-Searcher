@@ -15,7 +15,7 @@ body {
     margin: 0;
     overflow: hidden;
     cursor: default;
-    
+    background-repeat: repeat;
 }
 
 
@@ -25,7 +25,6 @@ ul {
 .Center {
     margin: auto;
     display: inline;
-    
     font-size: 19px;
     font-family: Yeep;
     word-spacing: 60%;
