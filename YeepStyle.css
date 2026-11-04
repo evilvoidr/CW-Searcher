@@ -7,6 +7,7 @@ body {
     color: white;
     font-family: Yeep;
     padding: 0;
+    margin: 0;
     background-image: url("suburb-corridor-wall.png");
     overflow: hidden;
     cursor: default;
@@ -77,13 +78,16 @@ img {
     color: black;
     background-color: white;
     padding: 15px;
+    
 }
 #title {
     color: black;
     background-color: white;
-    font-size: 67px;
-    height: 80px;
+    font-size:4vh;
+    padding: 1%;
+    max-height: 80px;
     border-radius: 30px;
+    
 }
 #title:hover {
     animation-duration: 50ms;
@@ -96,4 +100,3 @@ img {
 #PageSec {
     font-size: 20px;
 }
-
