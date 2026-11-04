@@ -15,7 +15,7 @@ body {
     margin: 0;
     overflow: hidden;
     cursor: default;
-    background-repeat :repeat-y, repeat-x;
+    background-repeat: repeat;
     background-size: 50%;
 }
 
@@ -73,6 +73,6 @@ div {
     max-width: fit-content;
     position: absolute;
     bottom: 0; 
-
+    transform:translateY(1360%)
     
 }
