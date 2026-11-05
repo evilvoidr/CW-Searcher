@@ -1,5 +1,5 @@
 
-const BaseUrl = "https://evilvoidr.github.io/CW-Searcher/"
+const BaseUrl = "https://evilvoidr.github.io/CW-Searcher/Pages/"
 const Etxt = document.getElementById("Error")
 const srch = document.getElementById("Text")
 const sug = document.getElementById("sug")
