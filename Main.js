@@ -15,7 +15,13 @@ Etxt.style.opacity = 0
 //console.log(countcount)
 //count.textContent = "CW's: " + countcount
 
-
+if(window.location.href == "https://evilvoidr.github.io/CW-Searcher/"){
+    console.log("f")
+}
+else{
+    document.getElementById("Bodyy").remove()
+    
+}
 
 const buttons = CW_List.map(name => {
     const Newbut = document.createElement("button")
