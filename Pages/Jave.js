@@ -1,4 +1,11 @@
 const Title = document.getElementById("title")
-Title.onclick = function(){
-    window.alert("Coming Soon!")
+const body = document.getElementById("body")
+function BnClk_SFX(){
+    let audio = new Audio("../ui_imagine_select.ogg")
+    audio.play()
 }
+Title.onclick = function(){
+    window.open("info.html")
+    BnClk_SFX()
+}
+document.title = Title.textContent
