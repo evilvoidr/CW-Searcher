@@ -17,7 +17,7 @@ Etxt.style.opacity = 0
 
 
 if(window.location.href != "https://evilvoidr.github.io/CW-Searcher/"){
-    //document.getElementById("Bodyy").remove()
+    document.getElementById("Bodyy").remove()
 }
 
 function BnClk_SFX(){
