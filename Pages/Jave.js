@@ -5,7 +5,7 @@ function BnClk_SFX(){
     audio.play()
 }
 
-Title.textContent = window.location.href.slice(28)
+Title.textContent = window.location.href.slice(28 + 18)
 Title.onclick = function(){
     window.open("info.html")
     BnClk_SFX()
