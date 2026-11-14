@@ -1,18 +1,9 @@
+import { CW_List } from "./Vars.js"
 
 const BaseUrl = "https://evilvoidr.github.io/CW-Searcher/Pages/"
 const Etxt = document.getElementById("Error")
 const srch = document.getElementById("Text")
 const sug = document.getElementById("sug")
-const count = document.getElementById("Count")
-const CW_List = [
-    "GADGETTALES", "PEEPS", "YEEPSVILLE", "SADMAN", "BASEWARS", "MALAKOR",
-    "INTRUDER", "SPIDERRUN", "THEGATE", "PLAYRP", "COOLESTWOOPETS", "FLAKE",
-    "RESKINBATTLE", "FNAFMOVIE", "DUCKANDGOOB", "CLASHERS", "GAMESHOW", "GAME1PRODUCTION",
-    "POOKSYBASE", "SHADOWMILKUP", "FARMSIM", "TRADEPLACE", "LOADOUT", "CUTEMARIOVR",
-    "3ZA3U3LA", "YEEPSTHEATRE", "GUESSTHEBUILD", "THEDREAMSCAPE", "SUBURBANISLAND",
-    "FREEBLOCKS", "GGHL", "EXPERIMENT406", "SILENCED", "HOLIDAYRUN", "ORANGE", "SHADOWSWRLD",
-    "KNOCKOUTS", "POTATOYEEP", "NINTENDOWORLD", "MONSTERMAYHEM"
-]
 Etxt.style.opacity = 0
 
 
