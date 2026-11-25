@@ -1,4 +1,4 @@
-import { CW_List } from "./Vars.js"
+import { CW_List, BnClk_SFX } from "./Vars.js"
 
 const BaseUrl = "https://evilvoidr.github.io/CW-Searcher/Pages/"
 const Etxt = document.getElementById("Error")
@@ -8,12 +8,7 @@ Etxt.style.opacity = 0
 
 
 if(window.location.href != "https://evilvoidr.github.io/CW-Searcher/"){
-    document.getElementById("Bodyy").remove()
-}
-
-function BnClk_SFX(){
-    let audio = new Audio("ui_imagine_select.ogg")
-    audio.play()
+    //document.getElementById("Bodyy").remove()
 }
 
 const buttons = CW_List.map(name => {
@@ -24,18 +19,16 @@ const buttons = CW_List.map(name => {
     Newbut.addEventListener("click", () => {
         srch.value = name;
         BnClk_SFX()
-        HA();
+        HA()
     })
-    sug.appendChild(Newbut);
-    return Newbut;
+    sug.appendChild(Newbut)
+    return Newbut
 })
 // hide all
 function HA() {
     buttons.forEach(b => b.hidden = true)
 }
-  
-srch.addEventListener("input", (e) => {
-
+srch.addEventListener("input", (e) => { 
     const TextEdit = srch.value.toUpperCase().trim()
     if(TextEdit === "") return HA()
     Etxt.style.opacity = 0;
@@ -54,7 +47,7 @@ srch.addEventListener("input", (e) => {
     }
 })
 document.addEventListener("keydown", (e) =>{
-    if (e.key !== "Enter") return;
+    if (e.key !== "Enter") return
         if(CW_List.includes(srch.value.toUpperCase().trim())){
             window.open(BaseUrl + srch.value.toUpperCase().trim())
         }
@@ -63,3 +56,4 @@ document.addEventListener("keydown", (e) =>{
             Etxt.style.opacity = 1
     }
 })
+
