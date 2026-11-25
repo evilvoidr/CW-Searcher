@@ -1,4 +1,4 @@
-import { CW_List } from "../Vars.js";
+import { BnClk_SFX, CW_List } from "../Vars.js";
 const main = document.getElementById("Main")
 const BASE_URL = "https://evilvoidr.github.io/CW-Searcher/Pages/"
 
@@ -19,6 +19,7 @@ const buttons2 = CW_List.map(name => {
     Newbut.textContent = name
     Newbut.classList = "DiscoveryBut"
     Newbut.addEventListener("click", () => {
+        BnClk_SFX()
         window.open(BASE_URL + name)
     })
     main.appendChild(Newbut);
